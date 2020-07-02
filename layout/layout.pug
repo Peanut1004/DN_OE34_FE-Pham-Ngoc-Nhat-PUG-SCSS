@@ -1,0 +1,29 @@
+html  
+    head
+        title PUG - Framework
+        meta(name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1')
+        link(rel='stylesheet' href='stylesheet/icomoon.css')
+        link(rel='stylesheet' href='stylesheet/style.css')
+        include mixin/mixin.pug
+    body
+        block header
+            include main/header.pug
+        block main
+            block banner
+                include main/banner.pug
+            block feature
+                include main/feature.pug
+            block about
+                include main/about.pug
+            block sta              
+                include main/sta.pug
+            block team
+                include main/team.pug
+            block video
+                include main/video.pug
+            block lnew
+                include main/lnew.pug
+        block footer
+            include main/footer.pug
+            
+

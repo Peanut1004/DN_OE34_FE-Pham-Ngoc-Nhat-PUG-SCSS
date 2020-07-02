@@ -1,0 +1,44 @@
+mixin fea__iconbox(h3,p,icon)
+    .fea__iconbox.mb-3.text-center
+        h3.fea__iconbox--title.mb-3
+            a(class="fea__iconbox--link" href="#")= h3
+        p.fea__iconbox--des.mb-4= p
+        .fea__iconbox--icon
+            span(class=`${icon}`)
+
+
+mixin sta__iconbox(icon,h3,p)
+    .sta__iconbox.text-center
+        .sta__iconbox--icon.mb-2
+            span(class=`${icon}`)
+        h3.sta__iconbox--title.mb-2= h3
+        p.sta__iconbox--numb= p
+
+mixin team__members(img,h3,p,color)
+    .team__members.mb-5.text-center
+        div(class=`team__avatar--${color}`)
+            .team__postImage
+                img(src=`images/section/${img}.jpg` alt='images')
+        h3.team__name
+            a(class="team__name--link" href="#")= h3
+        p.team__position= p
+
+mixin lnew__imagebox(img,h3,p)
+    .lnew__imagebox.mb-3
+        .lnew__postImage
+            a(herf="#")
+                img(src=`images/section/${img}.jpg` alt='images')
+        .lnew__content
+            h3.lnew__content--title.mb-1
+                a(class="lnew__content--link" href="#")= h3
+            p.lnew__content--time= p
+
+
+mixin widget__contact(p)
+    .widget__contact
+        p.widget__contact--des.mb-1=p
+
+mixin link__footer(links)
+    each link in links
+        li.widget__menu--items
+            a(herf="#" class="widget__menu--link")= link

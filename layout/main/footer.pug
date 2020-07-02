@@ -1,0 +1,29 @@
+footer.footer
+            .container
+                .widget__inner
+                    .grid__Fcolumns
+                        aside.widget__col.mb-5
+                            .widget__logo.mb-3
+                                a(href="#")
+                                    img(src='images/logo/01.png' alt='images')
+                            +widget__contact("Beverley Rd Brooklyn")
+                            +widget__contact("New York 1226 US")
+                            +widget__contact("E-mail : info@example.com")
+                        aside.widget__col.mb-5
+                            h3.widget__title.mb-2 Company
+                            ul.widget__menu
+                                +link__footer(['About us','Our Team','Products', 'Contact', 'About us'])
+                                
+                        aside.widget__col.mb-5
+                            h3.widget__title.mb-2 Our Services
+                            ul.widget__menu
+                                +link__footer(['Digital Marketing','Business Analysis','How It Work', 'Fix & Flip', 'Social Activation'])
+
+                        aside.widget__col.mb-5
+                            h3.widget__title.mb-2 Quick Link
+                            ul.widget__menu
+                                +link__footer(['Contact Us','Terms & Condition','Latest News', 'Privacy Policy', 'Help Desk'])
+            .bottom.text-center
+                .container
+                    .bottom__copyright
+                        Copyright © 2020. All right reserved. Design by themesflat
